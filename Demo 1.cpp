@@ -27,7 +27,7 @@ class Student {
 class GradeManager {
 private:
     vector<Student> students;
-    map<int, int> id_to_index;
+    map <int, int> id_to_index;
 
 public:
     void add_student(int id, const string& name) {
