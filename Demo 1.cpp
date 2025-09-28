@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <string>
 using namespace std;
 
 class Student {
@@ -8,6 +9,7 @@ class Student {
         int id;
         string name;
         vector<int> grades;
+        map<id, name> id_to_name;
     public:
         Student(int student_id, const string& student_name)
         : id(student_id), name(student_name) {}
@@ -32,6 +34,7 @@ private:
 
 public:
     void add_student(int id, const string& name) {
+        students 
     }
 
     void add_grade(int id, int grade) {
@@ -48,8 +51,8 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     
-
-    int Q;
+    string name;
+    int Q, id, grade;
     cin >> Q;
     
     GradeManager manager;
@@ -57,6 +60,17 @@ int main() {
     for (int i = 0; i < Q; i++) {
         string operation;
     cin >> operation;
+    if (operation == "add") {
+        cin >> id >> name;
+        manager.add_student(id, name);
+    } else if (operation == "grade") {
+        cin >> id >> grade;
+        manager.add_grade(id, grade);
+    } else if (operation == "sum") {
+
+    }
+
+
 }
 return 0;
 }
