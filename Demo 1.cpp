@@ -4,6 +4,11 @@
 #include <string>
 using namespace std;
 
+// Anggota Kelompok:
+// Nama: Ivan Wirahadian Marcerino NIM: 24/541954/TK/60142
+// Nama: RASYID RAYHAN NOVANDY NIM: 24/545518/TK/60688
+
+
 class Student {
     private:
         int id;
